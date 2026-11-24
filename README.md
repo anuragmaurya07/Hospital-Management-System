@@ -143,56 +143,6 @@ d:\Hospital Management System\
 ├── package.json
 └── README.md
 ```
-
----
-
-## 🚀 Execution & Setup Guide
-
-### 1. Prerequisites
-- **Node.js** v18+ (tested on Node v22.17)
-- **MongoDB** running locally on port 27017 or a MongoDB Atlas URI
-
-### 2. Configure Environment (`backend/.env`)
-The backend is pre-configured with default settings:
-```env
-PORT=5000
-NODE_ENV=development
-MONGODB_URI=mongodb://127.0.0.1:27017/hospital_management_system
-JWT_SECRET=super_secret_hospital_jwt_key_2026_modern_secure
-JWT_EXPIRES_IN=1d
-JWT_REFRESH_SECRET=super_secret_hospital_refresh_key_2026_secure
-JWT_REFRESH_EXPIRES_IN=7d
-CORS_ORIGIN=http://localhost:5173
-```
-
-### 3. Seed Database with Realistic Data
-Populate demo users, departments, doctors, patients, inventory, medicines, appointments, and bills:
-```bash
-npm run seed
-# or: cd backend && node seed/seed.js
-```
-
-### 4. Start the Application
-Run the backend and frontend:
-
-**Backend**:
-```bash
-cd backend
-npm run dev
-# Server runs on http://localhost:5000
-```
-
-**Frontend**:
-```bash
-cd frontend
-npm run dev
-# Frontend runs on http://localhost:5173
-```
-
-Open **http://localhost:5173** in your browser.
-
----
-
 ## 📡 RESTful API Documentation Summary
 
 | Method | Endpoint | Description | Access |
